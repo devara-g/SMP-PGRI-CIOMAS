@@ -51,7 +51,7 @@
                 <div>
                     <ul>
                         <li><a href="#">Ekstrakurikuler</a></li>
-                        <li><a href="#">Berita</a></li>
+                        <li><a href="berita.php">Berita</a></li>
                     </ul>
                 </div>
             </div>
@@ -63,23 +63,41 @@
 </footer>
 
 <script>
-// Hamburger menu
+// ---- Hamburger menu ----
 const hamburger = document.getElementById('hamburger');
-const navLinks = document.querySelector('.nav-links');
-if (hamburger) {
+const navLinks  = document.getElementById('navLinks');
+
+if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
-        hamburger.classList.toggle('active');
+        const isOpen = navLinks.classList.toggle('open');
+        hamburger.classList.toggle('active', isOpen);
+        hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            hamburger.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+            navLinks.classList.remove('open');
+            hamburger.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+        }
     });
 }
 
-// Navbar scroll effect
+// ---- Navbar scroll shadow ----
 window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 20) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+        navbar.classList.toggle('scrolled', window.scrollY > 20);
     }
-});
+}, { passive: true });
 </script>
