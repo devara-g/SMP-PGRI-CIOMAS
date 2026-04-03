@@ -1,0 +1,171 @@
+/* =============================================
+   FASILITAS PAGE
+   ============================================= */
+
+/* ---- HERO ---- */
+.fasilitas-hero {
+    margin-top: 66px;
+    background: linear-gradient(135deg, #0d3d28 0%, #1a6b4a 60%, #2e7d56 100%);
+    padding: 60px 24px;
+}
+.fasilitas-hero-wrap {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 40px; align-items: center;
+}
+.fasilitas-hero-text-col { color: white; }
+.fasilitas-hero-title {
+    font-size: 3.2rem; font-weight: 800; line-height: 1.1; color: white;
+    margin-top: 12px;
+}
+.fasilitas-hero-title span { color: var(--yellow); }
+.fasilitas-hero-desc {
+    color: rgba(255,255,255,.8); margin-top: 16px; font-size: .95rem; line-height: 1.75;
+}
+.fasilitas-hero-img-col { position: relative; }
+.fasilitas-hero-img {
+    width: 100%; aspect-ratio: 16/10; border-radius: var(--radius-lg);
+    object-fit: cover; object-position: center;
+    display: block;
+}
+.fasilitas-akred-badge {
+    position: absolute; bottom: -20px; right: 16px;
+    background: var(--yellow);
+    border-radius: var(--radius-md); padding: 14px 18px;
+    display: flex; align-items: center; gap: 12px;
+    box-shadow: var(--shadow-lg);
+    max-width: 260px;
+}
+.akred-icon {
+    width: 40px; height: 40px; border-radius: 8px;
+    background: rgba(0,0,0,.1);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; color: var(--gray-900);
+}
+.fasilitas-akred-badge strong { font-size: .95rem; color: var(--gray-900); }
+.fasilitas-akred-badge p { font-size: .72rem; color: var(--gray-700); margin-top: 3px; line-height: 1.4; }
+
+/* ---- FASILITAS MAIN ---- */
+.fasilitas-main-section { background: white; padding-top: 80px; }
+
+/* Mosaic layout */
+.fasilitas-mosaic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+/* Item base */
+.fasilitas-item {
+    position: relative; border-radius: var(--radius-md);
+    overflow: hidden; cursor: pointer;
+}
+.fasilitas-item-img {
+    width: 100%; height: 100%; min-height: 220px;
+    object-fit: cover; object-position: center;
+    display: block;
+    transition: transform .4s ease;
+}
+.fasilitas-item:hover .fasilitas-item-img { transform: scale(1.04); }
+.fasilitas-item-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(10,40,25,.92) 0%, rgba(10,40,25,.4) 55%, transparent 100%);
+    padding: 20px;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    opacity: 1;
+}
+.fasilitas-item-icon {
+    width: 36px; height: 36px; border-radius: 8px;
+    background: rgba(255,255,255,.15);
+    display: flex; align-items: center; justify-content: center;
+    color: white; margin-bottom: 10px;
+}
+.fasilitas-item-overlay h3 {
+    color: white; font-size: .95rem; font-weight: 700; margin-bottom: 6px;
+}
+.fasilitas-item-overlay p {
+    color: rgba(255,255,255,.8); font-size: .78rem; line-height: 1.55;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+    line-clamp: 3; overflow: hidden;
+}
+.fasilitas-extra-tag {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: rgba(255,255,255,.15);
+    border-radius: 20px; padding: 5px 10px;
+    font-size: .7rem; color: white;
+    margin-top: 10px; width: fit-content;
+}
+
+/* Grid positions */
+/* Row 1: Ruang Kelas (big-left, cols 1-2), Sarana Olahraga (big-right, col 3) */
+.fasilitas-big-left {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+.fasilitas-big-left .fasilitas-item-img { min-height: 300px; }
+
+.fasilitas-big-right {
+    grid-column: 3;
+    grid-row: 1;
+}
+.fasilitas-big-right .fasilitas-item-img { min-height: 300px; }
+
+/* Row 2: 3 small cards (Perpus, Lab Komputer, Lab IPA) */
+.fasilitas-small {
+    grid-column: span 1;
+    grid-row: 2;
+}
+.fasilitas-small .fasilitas-item-img { min-height: 220px; }
+
+/* Row 3: Kantin (wide) + Musholla (big) */
+.fasilitas-small-wide {
+    grid-column: 1;
+    grid-row: 3;
+}
+.fasilitas-small-wide .fasilitas-item-img { min-height: 260px; }
+
+.fasilitas-big-musholla {
+    grid-column: 2 / 4;
+    grid-row: 3;
+}
+.fasilitas-big-musholla .fasilitas-item-img { min-height: 260px; }
+
+/* ---- CTA KUNJUNGAN ---- */
+.kunjungan-section { background: var(--gray-50); }
+.kunjungan-box {
+    background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-mid) 100%);
+    border-radius: var(--radius-lg); padding: 60px;
+    text-align: center;
+}
+.kunjungan-box h2 { font-size: 2.2rem; font-weight: 800; color: white; }
+.kunjungan-box p { color: rgba(255,255,255,.85); max-width: 520px; margin: 14px auto 0; line-height: 1.7; }
+.kunjungan-actions {
+    display: flex; justify-content: center; gap: 14px;
+    margin-top: 28px; flex-wrap: wrap;
+}
+.kunjungan-actions .btn-outline { border-color: white; color: white; }
+.kunjungan-actions .btn-outline:hover { background: white; color: var(--green-main); }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 900px) {
+    .fasilitas-hero-wrap { grid-template-columns: 1fr; }
+    .fasilitas-hero-title { font-size: 2.2rem; }
+    .fasilitas-mosaic { grid-template-columns: repeat(2, 1fr); }
+    .fasilitas-big-left  { grid-column: 1 / 3; }
+    .fasilitas-big-right { grid-column: 1 / 3; }
+    .fasilitas-small     { grid-column: span 1; }
+    .fasilitas-small-wide { grid-column: 1; }
+    .fasilitas-big-musholla { grid-column: 2; }
+}
+@media (max-width: 640px) {
+    .fasilitas-hero-title { font-size: 1.8rem; }
+    .fasilitas-mosaic { grid-template-columns: 1fr; }
+    .fasilitas-big-left,
+    .fasilitas-big-right,
+    .fasilitas-small,
+    .fasilitas-small-wide,
+    .fasilitas-big-musholla { grid-column: 1; grid-row: auto; }
+    .kunjungan-box { padding: 36px 20px; }
+    .fasilitas-akred-badge { position: static; margin-top: 16px; }
+}

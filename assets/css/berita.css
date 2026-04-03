@@ -1,0 +1,162 @@
+/* CSS for Berita Page */
+.berita-hero {
+    background: var(--green-light);
+    padding: 100px 0 60px;
+    text-align: center;
+}
+.berita-hero-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--gray-900);
+    margin-bottom: 16px;
+    font-family: var(--font-heading, "Poppins", sans-serif);
+}
+.berita-hero-title span {
+    color: var(--green-main);
+}
+.berita-hero-desc {
+    font-size: 1.1rem;
+    color: var(--gray-600);
+    max-width: 600px;
+    margin: 0 auto 32px;
+    line-height: 1.6;
+}
+.kategori-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+.kategori-btn {
+    padding: 8px 20px;
+    background: white;
+    border: 1px solid var(--gray-200);
+    border-radius: 30px;
+    color: var(--gray-700);
+    font-size: .9rem;
+    font-weight: 500;
+    transition: all var(--transition, 0.3s ease);
+    text-decoration: none;
+}
+.kategori-btn:hover {
+    border-color: var(--green-main);
+    color: var(--green-main);
+    transform: translateY(-2px);
+}
+.kategori-btn.active {
+    background: var(--green-main);
+    border-color: var(--green-main);
+    color: white;
+}
+
+.berita-list-section {
+    padding: 60px 0 80px;
+}
+.berita-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Card classes from standard styling */
+.berita-card {
+    background: white;
+    border-radius: var(--radius-md, 12px);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform var(--transition, 0.3s ease), box-shadow 0.3s ease;
+    border: 1px solid var(--gray-100);
+}
+.berita-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.berita-img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    background: var(--gray-200);
+}
+.berita-card-body {
+    padding: 24px;
+}
+.berita-kategori {
+    display: inline-block;
+    padding: 6px 14px;
+    background: var(--green-light);
+    color: var(--green-main);
+    font-size: .78rem;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.berita-title-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.berita-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 14px;
+    color: var(--gray-900);
+    transition: color .25s;
+    font-family: var(--font-heading, "Poppins", sans-serif);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.berita-card:hover .berita-title {
+    color: var(--green-main);
+}
+.berita-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: .85rem;
+    color: var(--gray-500);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+}
+.page-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid var(--gray-200);
+    background: white;
+    color: var(--gray-700);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all .2s;
+}
+.page-btn:hover {
+    border-color: var(--green-main);
+    color: var(--green-main);
+}
+.page-btn.active {
+    background: var(--green-main);
+    border-color: var(--green-main);
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .berita-grid { grid-template-columns: repeat(2, 1fr); }
+    .berita-hero-title { font-size: 2.4rem; }
+}
+@media (max-width: 600px) {
+    .berita-grid { grid-template-columns: 1fr; }
+    .berita-hero-title { font-size: 2rem; }
+}

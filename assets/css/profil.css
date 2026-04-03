@@ -1,0 +1,213 @@
+/* =============================================
+   PROFIL SEKOLAH PAGE
+   ============================================= */
+
+/* ---- HERO ---- */
+.profil-hero {
+    position: relative;
+    min-height: 380px;
+    display: flex; align-items: flex-end;
+    overflow: hidden; margin-top: 66px;
+}
+.profil-hero-bg {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center;
+}
+.profil-hero-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(10,40,25,.85) 0%, rgba(10,40,25,.4) 60%, transparent 100%);
+}
+.profil-hero-content {
+    position: relative; z-index: 2;
+    padding: 60px 24px;
+}
+.profil-hero-title {
+    font-size: 3rem; font-weight: 800; color: white;
+    margin-top: 10px; line-height: 1.1;
+}
+.profil-hero-desc {
+    color: rgba(255,255,255,.8); max-width: 520px;
+    font-size: .95rem; margin-top: 14px; line-height: 1.7;
+}
+
+/* ---- SEJARAH ---- */
+.sejarah-section { background: white; }
+.sejarah-header { margin-bottom: 36px; }
+.sejarah-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
+}
+.sejarah-text p { font-size: .93rem; color: var(--gray-600); line-height: 1.8; }
+.sejarah-quote {
+    background: var(--green-light);
+    border-left: 4px solid var(--green-main);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 16px 20px; margin-top: 24px;
+}
+.sejarah-quote p { font-style: italic; color: var(--green-dark); font-size: .9rem; }
+.sejarah-quote cite { display: block; margin-top: 8px; font-size: .8rem; font-weight: 600; color: var(--green-main); }
+.sejarah-image-wrap { position: relative; }
+.sejarah-img {
+    width: 100%; aspect-ratio: 4/3;
+    border-radius: var(--radius-lg);
+    object-fit: cover; object-position: center;
+    display: block;
+}
+.sejarah-badge {
+    position: absolute; bottom: -16px; right: -16px;
+    background: var(--yellow);
+    border-radius: var(--radius-md);
+    padding: 16px 20px; text-align: center;
+    box-shadow: var(--shadow-lg);
+}
+.sejarah-badge-num { display: block; font-size: 1.8rem; font-weight: 800; color: var(--gray-900); }
+.sejarah-badge-label { display: block; font-size: .7rem; font-weight: 600; color: var(--gray-700); margin-top: 2px; }
+
+/* ---- VISI MISI ---- */
+.visi-section { background: var(--gray-50); }
+.visi-card {
+    background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-main) 100%);
+    border-radius: var(--radius-lg); padding: 40px;
+    text-align: center; margin-bottom: 32px;
+}
+.visi-icon {
+    width: 60px; height: 60px; border-radius: 50%;
+    background: rgba(255,255,255,.15);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px; color: white;
+}
+.visi-label {
+    font-size: .78rem; font-weight: 600; letter-spacing: 1px;
+    text-transform: uppercase; color: rgba(255,255,255,.7); margin-bottom: 16px;
+}
+.visi-text {
+    font-size: 1.1rem; font-style: italic; color: white;
+    line-height: 1.7; max-width: 680px; margin: 0 auto;
+}
+.misi-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+}
+.misi-card {
+    background: white; border-radius: var(--radius-md);
+    padding: 28px; box-shadow: var(--shadow-sm);
+}
+.misi-icon {
+    width: 44px; height: 44px; border-radius: 10px;
+    background: var(--green-light);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--green-main); margin-bottom: 16px;
+}
+.misi-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 10px; color: var(--gray-900); }
+.misi-card p { font-size: .85rem; color: var(--gray-600); line-height: 1.7; }
+
+/* ---- STRUKTUR ---- */
+.struktur-section { background: white; }
+.struktur-header {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    flex-wrap: wrap; gap: 16px; margin-bottom: 40px;
+}
+
+/* Org chart */
+.org-chart { display: flex; flex-direction: column; align-items: center; }
+.org-level { display: flex; justify-content: center; gap: 32px; }
+.org-top { margin-bottom: 0; }
+.org-connector-v {
+    width: 2px; height: 36px;
+    background: var(--gray-200); margin: 0 auto;
+}
+.org-level-3 {
+    display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;
+}
+.org-box {
+    display: flex; flex-direction: column; align-items: center;
+    padding: 20px 28px; border-radius: var(--radius-md);
+    text-align: center;
+}
+.org-box-main {
+    background: linear-gradient(135deg, var(--green-dark), var(--green-main));
+    color: white; min-width: 220px;
+}
+.org-box-secondary {
+    background: white; border: 1.5px solid var(--gray-200);
+    box-shadow: var(--shadow-sm); min-width: 180px;
+}
+.org-avatar {
+    width: 64px; height: 64px; border-radius: 50%;
+    margin-bottom: 12px;
+    object-fit: cover; object-position: center;
+    border: 3px solid rgba(255,255,255,.3);
+    display: block;
+}
+.org-avatar-sm {
+    width: 48px; height: 48px; border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover; object-position: center;
+    display: block;
+}
+.org-name { font-weight: 700; font-size: .88rem; }
+.org-box-main .org-name { color: white; }
+.org-role { font-size: .75rem; margin-top: 4px; opacity: .8; }
+.org-box-main .org-role { color: rgba(255,255,255,.8); }
+.org-box-secondary .org-role { color: var(--green-main); font-weight: 600; }
+
+/* ---- TENAGA PENDIDIK ---- */
+.tenaga-section { background: var(--gray-50); }
+.tenaga-grid {
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px;
+}
+.tenaga-card { overflow: hidden; }
+.tenaga-img {
+    width: 100%; aspect-ratio: 1;
+    object-fit: cover; object-position: top center;
+    display: block;
+}
+.tenaga-info { padding: 12px; text-align: center; }
+.tenaga-nama { font-weight: 600; font-size: .82rem; color: var(--gray-900); }
+.tenaga-mapel { font-size: .75rem; color: var(--green-main); font-weight: 500; margin-top: 2px; }
+
+/* ---- FASILITAS MINI ---- */
+.fasilitas-mini-section { background: white; }
+.fasilitas-mini-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+}
+.fasilitas-mini-card { overflow: hidden; }
+.fasilitas-mini-img {
+    width: 100%; aspect-ratio: 4/3;
+    object-fit: cover; object-position: center;
+    display: block;
+}
+.fasilitas-mini-name {
+    padding: 14px 16px; font-size: .88rem; font-weight: 600;
+    color: var(--gray-900); text-align: center;
+}
+
+/* ---- BERGABUNG CTA ---- */
+.bergabung-section { background: var(--gray-50); padding-bottom: 80px; }
+.bergabung-box {
+    background: var(--yellow);
+    border-radius: var(--radius-lg); padding: 56px;
+    text-align: center;
+}
+.bergabung-box h2 { font-size: 2rem; font-weight: 800; color: var(--gray-900); }
+.bergabung-box p { color: var(--gray-700); max-width: 540px; margin: 14px auto 0; line-height: 1.7; }
+.bergabung-actions {
+    display: flex; justify-content: center; gap: 14px;
+    margin-top: 28px; flex-wrap: wrap;
+}
+.bergabung-actions .btn-outline { border-color: var(--gray-900); color: var(--gray-900); }
+.bergabung-actions .btn-outline:hover { background: var(--gray-900); color: white; }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 900px) {
+    .sejarah-grid { grid-template-columns: 1fr; }
+    .misi-grid { grid-template-columns: 1fr; }
+    .tenaga-grid { grid-template-columns: repeat(3, 1fr); }
+    .fasilitas-mini-grid { grid-template-columns: repeat(2, 1fr); }
+    .struktur-header { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 640px) {
+    .profil-hero-title { font-size: 2rem; }
+    .tenaga-grid { grid-template-columns: repeat(2, 1fr); }
+    .org-level-3 { flex-direction: column; align-items: center; }
+    .bergabung-box { padding: 32px 20px; }
+}
