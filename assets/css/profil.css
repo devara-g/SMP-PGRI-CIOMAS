@@ -206,8 +206,45 @@
     .struktur-header { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 640px) {
+    .profil-hero { min-height: 300px; }
+    .profil-hero-content { padding: 40px 16px; }
     .profil-hero-title { font-size: 2rem; }
+    .profil-hero-desc { font-size: .88rem; }
+    
+    .sejarah-grid { gap: 32px; }
+    .sejarah-badge { padding: 12px 16px; bottom: -12px; right: -12px; }
+    .sejarah-badge-num { font-size: 1.5rem; }
+
     .tenaga-grid { grid-template-columns: repeat(2, 1fr); }
     .org-level-3 { flex-direction: column; align-items: center; }
     .bergabung-box { padding: 32px 20px; }
+    .bergabung-box h2 { font-size: 1.5rem; }
+    .bergabung-box p { font-size: .88rem; }
+}
+
+/* Mobile L (425px) */
+@media (max-width: 425px) {
+    .profil-hero-title { font-size: 1.8rem; }
+    .visi-card { padding: 32px 20px; }
+    .visi-text { font-size: .95rem; }
+    .misi-card { padding: 24px 20px; }
+    
+    .org-box { width: 100%; min-width: auto; }
+    .org-level { flex-direction: column; align-items: center; width: 100%; }
+
+    .fasilitas-mini-grid { grid-template-columns: 1fr; }
+}
+
+/* Mobile M (375px) */
+@media (max-width: 375px) {
+    .profil-hero-title { font-size: 1.6rem; }
+    .sejarah-badge { position: static; margin-top: 16px; display: inline-block; }
+    .bergabung-actions { flex-direction: column; align-items: stretch; }
+}
+
+/* Mobile S (320px) */
+@media (max-width: 320px) {
+    .profil-hero-title { font-size: 1.5rem; }
+    .profil-hero-desc { font-size: .85rem; }
+    .tenaga-grid { grid-template-columns: 1fr; }
 }

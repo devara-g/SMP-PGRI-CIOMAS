@@ -353,16 +353,48 @@ input, textarea, select { font-family: var(--font); }
    RESPONSIVE - MOBILE (≤ 640px)
    ============================================= */
 @media (max-width: 640px) {
-    .section { padding: 56px 16px; }
-    .section-sm { padding: 36px 16px; }
-    .section-title { font-size: 1.6rem; }
-    .stats-bar { padding: 36px 16px; }
-    .stats-bar .container { gap: 28px; }
-    .stat-number { font-size: 2rem; }
+    .section { padding: 48px 16px; }
+    .section-sm { padding: 32px 16px; }
+    .section-title { font-size: 1.5rem; }
+    .section-subtitle { font-size: .88rem; }
+    .stats-bar { padding: 32px 16px; }
+    .stats-bar .container { gap: 24px; }
+    .stat-number { font-size: 1.8rem; }
+    .stat-label { font-size: .65rem; }
+
+    .nav-brand { font-size: 1rem; }
+    .brand-name { font-size: .95rem; }
 
     /* Detail Berita */
-    .detail-title { font-size: 1.6rem; }
-    .detail-content { font-size: .95rem; padding: 0 16px; }
-    .detail-hero { padding: 50px 16px 24px; }
-    .detail-meta { gap: 12px; font-size: .85rem; }
+    .detail-title { font-size: 1.5rem; margin-bottom: 16px; }
+    .detail-content { font-size: .95rem; padding: 0; }
+    .detail-hero { padding: 40px 16px 20px; }
+    .detail-meta { gap: 10px; font-size: .8rem; }
+}
+
+/* Mobile L (425px) */
+@media (max-width: 425px) {
+    .section-title { font-size: 1.4rem; }
+    .nav-container { padding: 0 16px; }
+    .brand-name { display: none; } /* Show only logo on very small screens or keep it very short */
+    .nav-brand::after { content: 'SMP PGRI'; font-size: .9rem; } /* Shortened name */
+    
+    .footer-container { padding-bottom: 24px; }
+    .footer-brand p { max-width: 100%; }
+}
+
+/* Mobile M (375px) */
+@media (max-width: 375px) {
+    .section-title { font-size: 1.35rem; }
+    .btn { padding: 10px 20px; font-size: .88rem; }
+    .detail-title { font-size: 1.35rem; }
+    .stat-number { font-size: 1.6rem; }
+}
+
+/* Mobile S (320px) */
+@media (max-width: 320px) {
+    .section-title { font-size: 1.25rem; }
+    .section { padding: 40px 12px; }
+    .nav-brand::after { content: 'SMP PGRI'; }
+    .detail-meta span { font-size: .75rem; }
 }

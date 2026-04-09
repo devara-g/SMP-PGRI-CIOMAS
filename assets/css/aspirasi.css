@@ -206,8 +206,30 @@
     .aspirasi-quote-float { position: static; margin-top: 16px; max-width: 100%; }
 }
 @media (max-width: 640px) {
+    .aspirasi-hero { padding: 40px 16px; }
     .aspirasi-hero-title { font-size: 2rem; }
+    .aspirasi-hero-desc { font-size: .9rem; }
     .form-row { grid-template-columns: 1fr; }
     .aspirasi-form-col { padding: 20px; }
     .aspirasi-info-col { flex-direction: column; }
+    .aspirasi-avatars { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
+
+/* Mobile L (425px) */
+@media (max-width: 425px) {
+    .aspirasi-hero-title { font-size: 1.8rem; }
+    .aspirasi-form-col { padding: 24px 16px; }
+    .aspirasi-submit { font-size: .9rem; }
+}
+
+/* Mobile M (375px) */
+@media (max-width: 375px) {
+    .aspirasi-hero-title { font-size: 1.6rem; }
+}
+
+/* Mobile S (320px) */
+@media (max-width: 320px) {
+    .aspirasi-hero-title { font-size: 1.5rem; }
+    .aspirasi-hero-desc { font-size: .85rem; }
+    .checkbox-label { font-size: .8rem; }
 }

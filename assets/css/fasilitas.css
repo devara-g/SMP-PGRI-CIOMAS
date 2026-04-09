@@ -159,13 +159,35 @@
     .fasilitas-big-musholla { grid-column: 2; }
 }
 @media (max-width: 640px) {
+    .fasilitas-hero { padding: 40px 16px; }
     .fasilitas-hero-title { font-size: 1.8rem; }
-    .fasilitas-mosaic { grid-template-columns: 1fr; }
+    .fasilitas-hero-desc { font-size: .88rem; }
+    .fasilitas-mosaic { grid-template-columns: 1fr; gap: 16px; }
     .fasilitas-big-left,
     .fasilitas-big-right,
     .fasilitas-small,
     .fasilitas-small-wide,
     .fasilitas-big-musholla { grid-column: 1; grid-row: auto; }
+    .fasilitas-item-img { min-height: 200px !important; }
+    
     .kunjungan-box { padding: 36px 20px; }
-    .fasilitas-akred-badge { position: static; margin-top: 16px; }
+    .kunjungan-box h2 { font-size: 1.6rem; }
+    .fasilitas-akred-badge { position: static; margin-top: 16px; max-width: 100%; }
+}
+
+/* Mobile L (425px) */
+@media (max-width: 425px) {
+    .fasilitas-hero-title { font-size: 1.6rem; }
+}
+
+/* Mobile M (375px) */
+@media (max-width: 375px) {
+    .fasilitas-hero-title { font-size: 1.5rem; }
+    .kunjungan-box h2 { font-size: 1.4rem; }
+}
+
+/* Mobile S (320px) */
+@media (max-width: 320px) {
+    .fasilitas-hero-title { font-size: 1.35rem; }
+    .fasilitas-hero-desc { font-size: .85rem; }
 }
