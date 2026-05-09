@@ -174,7 +174,7 @@ function time_since($dt) {
     <!-- CTA Info Banner -->
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:var(--radius-md);overflow:hidden;margin-top:24px;background:white;border:1px solid var(--gray-100);box-shadow:var(--shadow-sm)">
         <div style="background:var(--gray-100);min-height:220px;overflow:hidden">
-            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&q=80" alt="Perpustakaan" style="width:100%;height:100%;object-fit:cover;display:block">
+            <img src="img/WhatsApp Image 2026-05-06 at 09.54.33.jpeg" alt="Perpustakaan" style="width:100%;height:100%;object-fit:cover;display:block">
         </div>
         <div style="padding:32px">
             <div style="width:44px;height:44px;background:var(--ap-teal-lt);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:14px">

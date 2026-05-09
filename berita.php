@@ -89,7 +89,7 @@ $q_all = $conn->query("SELECT * FROM berita $where ORDER BY id DESC LIMIT 9");
                 <!-- Right: Image -->
                 <div class="b-hero-img-wrap">
                     <img
-                        src="<?= htmlspecialchars($headline['gambar'] ? 'uploads/' . $headline['gambar'] : 'https://lh3.googleusercontent.com/aida-public/AB6AXuCEElR7Y7-kCYFW3ZsfYClcatBUlzOq2tkxNt4PGDeK1fSBSHkY7LuFfh45uOWfDmatcszWZoi0UrpRienFQqFZWljVHKH-RG2bZBL-ADaqUp96e53guwqaIE5rs-hqaPnT7S5yfYehoJ66FV_iYuXzqmNONCZ3uOVkraseURAAxA8aE0clVaf6FBAzPjGUvF-1Nf4dGTTgw_5CXhVDq4YtshRtJpuLiz8ItxfjD1WjMU5uMyfU9jQAi6dK0dI7tiGUDhyptfe-P_iI') ?>"
+                        src="<?= htmlspecialchars($headline['gambar'] ? 'uploads/' . $headline['gambar'] : 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80') ?>"
                         alt="<?= htmlspecialchars($headline['judul']) ?>"
                         class="b-hero-img">
                     <a href="detail-berita.php?id=<?= $headline['id'] ?>" class="b-hero-play-btn" aria-label="Baca berita">
@@ -144,7 +144,7 @@ $q_all = $conn->query("SELECT * FROM berita $where ORDER BY id DESC LIMIT 9");
                         <?php while ($b = $q_all->fetch_assoc()): ?>
                             <a href="detail-berita.php?id=<?= $b['id'] ?>" class="b-card">
                                 <div class="b-card-img-wrap">
-                                    <img src="<?= htmlspecialchars($b['gambar'] ? 'uploads/' . $b['gambar'] : 'https://lh3.googleusercontent.com/aida-public/AB6AXuCEElR7Y7-kCYFW3ZsfYClcatBUlzOq2tkxNt4PGDeK1fSBSHkY7LuFfh45uOWfDmatcszWZoi0UrpRienFQqFZWljVHKH-RG2bZBL-ADaqUp96e53guwqaIE5rs-hqaPnT7S5yfYehoJ66FV_iYuXzqmNONCZ3uOVkraseURAAxA8aE0clVaf6FBAzPjGUvF-1Nf4dGTTgw_5CXhVDq4YtshRtJpuLiz8ItxfjD1WjMU5uMyfU9jQAi6dK0dI7tiGUDhyptfe-P_iI') ?>" alt="<?= htmlspecialchars($b['judul']) ?>">
+                                    <img src="<?= htmlspecialchars($b['gambar'] ? 'uploads/' . $b['gambar'] : 'https://images.unsplash.com/photo-1585829365234-781fefc47e02?w=600&q=80') ?>" alt="<?= htmlspecialchars($b['judul']) ?>">
                                     <span class="b-card-kat <?= strtolower($b['kategori']) ?>"><?= htmlspecialchars($b['kategori']) ?></span>
                                 </div>
                                 <div class="b-card-body">
@@ -200,7 +200,7 @@ $q_all = $conn->query("SELECT * FROM berita $where ORDER BY id DESC LIMIT 9");
                         <?php foreach ($top3 as $b): ?>
                             <a href="detail-berita.php?id=<?= $b['id'] ?>" class="b-card">
                                 <div class="b-card-img-wrap">
-                                    <img src="<?= htmlspecialchars($b['gambar'] ? 'uploads/' . $b['gambar'] : 'https://lh3.googleusercontent.com/aida-public/AB6AXuCEElR7Y7-kCYFW3ZsfYClcatBUlzOq2tkxNt4PGDeK1fSBSHkY7LuFfh45uOWfDmatcszWZoi0UrpRienFQqFZWljVHKH-RG2bZBL-ADaqUp96e53guwqaIE5rs-hqaPnT7S5yfYehoJ66FV_iYuXzqmNONCZ3uOVkraseURAAxA8aE0clVaf6FBAzPjGUvF-1Nf4dGTTgw_5CXhVDq4YtshRtJpuLiz8ItxfjD1WjMU5uMyfU9jQAi6dK0dI7tiGUDhyptfe-P_iI') ?>" alt="<?= htmlspecialchars($b['judul']) ?>">
+                                    <img src="<?= htmlspecialchars($b['gambar'] ? 'uploads/' . $b['gambar'] : 'https://images.unsplash.com/photo-1585829365234-781fefc47e02?w=600&q=80') ?>" alt="<?= htmlspecialchars($b['judul']) ?>">
                                     <span class="b-card-kat <?= strtolower($b['kategori']) ?>"><?= htmlspecialchars($b['kategori']) ?></span>
                                 </div>
                                 <div class="b-card-body">
@@ -241,7 +241,7 @@ $q_all = $conn->query("SELECT * FROM berita $where ORDER BY id DESC LIMIT 9");
                         <?php if (isset($bottom2[1])): $side = $bottom2[1]; ?>
                             <a href="detail-berita.php?id=<?= $side['id'] ?>" class="b-side-card">
                                 <div class="b-side-img-wrap">
-                                    <img src="<?= htmlspecialchars($side['gambar'] ? 'uploads/' . $side['gambar'] : 'https://lh3.googleusercontent.com/aida-public/AB6AXuCEElR7Y7-kCYFW3ZsfYClcatBUlzOq2tkxNt4PGDeK1fSBSHkY7LuFfh45uOWfDmatcszWZoi0UrpRienFQqFZWljVHKH-RG2bZBL-ADaqUp96e53guwqaIE5rs-hqaPnT7S5yfYehoJ66FV_iYuXzqmNONCZ3uOVkraseURAAxA8aE0clVaf6FBAzPjGUvF-1Nf4dGTTgw_5CXhVDq4YtshRtJpuLiz8ItxfjD1WjMU5uMyfU9jQAi6dK0dI7tiGUDhyptfe-P_iI') ?>" alt="<?= htmlspecialchars($side['judul']) ?>">
+                                    <img src="<?= htmlspecialchars($side['gambar'] ? 'uploads/' . $side['gambar'] : 'https://images.unsplash.com/photo-1585829365234-781fefc47e02?w=600&q=80') ?>" alt="<?= htmlspecialchars($side['judul']) ?>">
                                     <span class="b-card-kat <?= strtolower($side['kategori']) ?>"><?= htmlspecialchars($side['kategori']) ?></span>
                                 </div>
                                 <div class="b-card-body">

@@ -20,7 +20,7 @@ $current_page = 'profil';
      HERO - PROFIL
      ========================================== -->
 <section class="profil-hero">
-    <img class="profil-hero-bg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhSavxoGNf6N1QTFR7_jUX94GR-w1ihetT3jJvXARtVl3kGbMLE4gVqGbV3gPgh9H3OoiiLi30PQzePXu7qU0M19-yKBFquDVDUFaQ6KHJgydtY5KzGGDZa1P_GZaYuMrqTBAJ_uFHvNmXmnWyfPDm4YJ2DtwhydAyQCurAjN4PWaGwix2zQdsXxYXF9RIBGfGSzXK6KW3b2n1X3s7DkG4AMtEDwlmgwABFiX7b1qXIwU5w2I2RDx3NPo0Y-1fRSkoDf3tf6UoHeqI" alt="Gedung SMP PGRI Ciomas">
+    <img class="profil-hero-bg" src="img/sekolah.jpeg" alt="Gedung SMP PGRI Ciomas">
     <div class="profil-hero-overlay"></div>
     <div class="profil-hero-content container">
         <div class="badge-strip" style="background:rgba(255,255,255,.15);color:white;margin-bottom:14px">
@@ -61,7 +61,7 @@ $current_page = 'profil';
                 </blockquote>
             </div>
             <div class="sejarah-image-wrap">
-                <img class="sejarah-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaxgOvtactjrARqi6h63bzeZEUDDt4-UJrLz600ywV4aUNxrWikzvQV9ywe2SJRlI77z723OWdg32sIgJKlOfh_JQMB-dZc00W5Q0PoUvig-rtP8M5y3w1NWvmO07hQHp5-0Nx1T9AggdAEYFYnHeUcYbaZcH_iAYOAEb9oLuexUyi0RUYdvUkLX8uMi8qW6K4xIht9WYKCppW5RTcuQto-_CLPYWV5MLpP5oG0RuuCV1NfL8PyDClQKfecaslD9WpvX-o3dlIGvQl" alt="Foto Sekolah">
+                <img class="sejarah-img" src="img/WhatsApp Image 2026-05-06 at 09.54.33.jpeg" alt="Foto Sekolah">
                 <div class="sejarah-badge">
                     <span class="sejarah-badge-num">25+</span>
                     <span class="sejarah-badge-label">Tahun Pengabdian</span>
@@ -142,7 +142,7 @@ $current_page = 'profil';
             <!-- Kepala Sekolah -->
             <div class="org-level org-top">
                 <div class="org-box org-box-main">
-                    <img class="org-avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbtvEycatQkDoKZ-8CeqZEtpCSleFgQIAsP2eQ5MSH-lUcQgitwnbE_EfTlTb15eiy7w_V3ih-mbhcuDjHxWCqSZutYowy4Y93XqVG3FSbfcxDRGsOlvJ6nryT5QfHDrhrzceXE-HVnDtFrMmnYUktOiN92NJgCBCPOk0u6DHZeG44Ua3UDqWayuk9X2DeVCtnVGoxNN5ko4WCzvopT7cLfb3cGG2XzPE2UJMuBBhM1HHuaRkhKujN2dGZJ5hU2NNwoX3ntakRv2KM" alt="Kepala Sekolah">
+                    <img class="org-avatar" src="https://ui-avatars.com/api/?name=Reza&background=0D8ABC&color=fff&size=128" alt="Kepala Sekolah">
                     <?php 
                     $q_kepsek = $conn->query("SELECT kepala_sekolah FROM pengaturan LIMIT 1");
                     $kepsek = $q_kepsek->fetch_assoc()['kepala_sekolah'] ?? 'H. Ahmad Reza, M.Pd';
@@ -163,7 +163,7 @@ $current_page = 'profil';
                 ];
                 foreach ($row2 as $r): ?>
                 <div class="org-box org-box-secondary">
-                    <img class="org-avatar-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEElR7Y7-kCYFW3ZsfYClcatBUlzOq2tkxNt4PGDeK1fSBSHkY7LuFfh45uOWfDmatcszWZoi0UrpRienFQqFZWljVHKH-RG2bZBL-ADaqUp96e53guwqaIE5rs-hqaPnT7S5yfYehoJ66FV_iYuXzqmNONCZ3uOVkraseURAAxA8aE0clVaf6FBAzPjGUvF-1Nf4dGTTgw_5CXhVDq4YtshRtJpuLiz8ItxfjD1WjMU5uMyfU9jQAi6dK0dI7tiGUDhyptfe-P_iI" alt="Staff">
+                    <img class="org-avatar-sm" src="https://ui-avatars.com/api/?background=random&color=fff" alt="Staff">
                     <div class="org-name" style="font-size:.82rem"><?= $r['nama'] ?></div>
                     <div class="org-role" style="font-size:.75rem"><?= $r['peran'] ?></div>
                 </div>
@@ -198,7 +198,7 @@ $current_page = 'profil';
             ];
             foreach ($guru as $g): ?>
             <div class="tenaga-card card">
-                <img class="tenaga-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaxgOvtactjrARqi6h63bzeZEUDDt4-UJrLz600ywV4aUNxrWikzvQV9ywe2SJRlI77z723OWdg32sIgJKlOfh_JQMB-dZc00W5Q0PoUvig-rtP8M5y3w1NWvmO07hQHp5-0Nx1T9AggdAEYFYnHeUcYbaZcH_iAYOAEb9oLuexUyi0RUYdvUkLX8uMi8qW6K4xIht9WYKCppW5RTcuQto-_CLPYWV5MLpP5oG0RuuCV1NfL8PyDClQKfecaslD9WpvX-o3dlIGvQl" alt="Foto Guru">
+                <img class="tenaga-img" src="https://ui-avatars.com/api/?background=random&color=fff" alt="Foto Guru">
                 <div class="tenaga-info">
                     <div class="tenaga-nama"><?= $g['nama'] ?></div>
                     <div class="tenaga-mapel"><?= $g['mapel'] ?></div>
@@ -227,7 +227,7 @@ $current_page = 'profil';
             $q_fas = $conn->query("SELECT * FROM fasilitas ORDER BY id DESC LIMIT 4");
             while ($f = $q_fas->fetch_assoc()): ?>
             <div class="fasilitas-mini-card card">
-                <img class="fasilitas-mini-img" src="<?= htmlspecialchars($f['gambar'] ? 'uploads/'.$f['gambar'] : 'https://lh3.googleusercontent.com/aida-public/AB6AXuCEElR7Y7-kCYFW3ZsfYClcatBUlzOq2tkxNt4PGDeK1fSBSHkY7LuFfh45uOWfDmatcszWZoi0UrpRienFQqFZWljVHKH-RG2bZBL-ADaqUp96e53guwqaIE5rs-hqaPnT7S5yfYehoJ66FV_iYuXzqmNONCZ3uOVkraseURAAxA8aE0clVaf6FBAzPjGUvF-1Nf4dGTTgw_5CXhVDq4YtshRtJpuLiz8ItxfjD1WjMU5uMyfU9jQAi6dK0dI7tiGUDhyptfe-P_iI') ?>" alt="<?= htmlspecialchars($f['nama_fasilitas']) ?>">
+                <img class="fasilitas-mini-img" src="<?= htmlspecialchars($f['gambar'] ? 'uploads/'.$f['gambar'] : 'img/fasilitas1.jpeg') ?>" alt="<?= htmlspecialchars($f['nama_fasilitas']) ?>">
                 <div class="fasilitas-mini-name"><?= htmlspecialchars($f['nama_fasilitas']) ?></div>
             </div>
             <?php endwhile; ?>

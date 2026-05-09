@@ -21,7 +21,7 @@ $current_page = 'index';
      ========================================== -->
 <section class="hero">
     <div class="hero-bg">
-            <img class="hero-img-placeholder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhSavxoGNf6N1QTFR7_jUX94GR-w1ihetT3jJvXARtVl3kGbMLE4gVqGbV3gPgh9H3OoiiLi30PQzePXu7qU0M19-yKBFquDVDUFaQ6KHJgydtY5KzGGDZa1P_GZaYuMrqTBAJ_uFHvNmXmnWyfPDm4YJ2DtwhydAyQCurAjN4PWaGwix2zQdsXxYXF9RIBGfGSzXK6KW3b2n1X3s7DkG4AMtEDwlmgwABFiX7b1qXIwU5w2I2RDx3NPo0Y-1fRSkoDf3tf6UoHeqI"
+            <img class="hero-img-placeholder" src="img/sekolah.jpeg"
              alt="">
         <div class="hero-overlay"></div>
     </div>
@@ -118,7 +118,7 @@ $current_page = 'index';
             </ul>
         </div>
         <div class="generasi-image-wrap">
-            <img class="generasi-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbtvEycatQkDoKZ-8CeqZEtpCSleFgQIAsP2eQ5MSH-lUcQgitwnbE_EfTlTb15eiy7w_V3ih-mbhcuDjHxWCqSZutYowy4Y93XqVG3FSbfcxDRGsOlvJ6nryT5QfHDrhrzceXE-HVnDtFrMmnYUktOiN92NJgCBCPOk0u6DHZeG44Ua3UDqWayuk9X2DeVCtnVGoxNN5ko4WCzvopT7cLfb3cGG2XzPE2UJMuBBhM1HHuaRkhKujN2dGZJ5hU2NNwoX3ntakRv2KM" alt="Siswa dan Guru">
+            <img class="generasi-img" src="img/WhatsApp Image 2026-05-06 at 09.54.26 (1).jpeg" alt="Siswa dan Guru">
             <div class="generasi-badge-float">
                 <span class="gen-badge-num">25+</span>
                 <span class="gen-badge-text">Tahun<br>Melahirkan<br>Prestasi</span>
@@ -145,7 +145,7 @@ $current_page = 'index';
             <!-- Big card: Prestasi -->
             <div class="unggulan-big card">
                 <img class="unggulan-img"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaxgOvtactjrARqi6h63bzeZEUDDt4-UJrLz600ywV4aUNxrWikzvQV9ywe2SJRlI77z723OWdg32sIgJKlOfh_JQMB-dZc00W5Q0PoUvig-rtP8M5y3w1NWvmO07hQHp5-0Nx1T9AggdAEYFYnHeUcYbaZcH_iAYOAEb9oLuexUyi0RUYdvUkLX8uMi8qW6K4xIht9WYKCppW5RTcuQto-_CLPYWV5MLpP5oG0RuuCV1NfL8PyDClQKfecaslD9WpvX-o3dlIGvQl"
+                src="img/WhatsApp Image 2026-05-06 at 09.54.33.jpeg"
                  alt="">
                 <div class="unggulan-big-content">
                     <a href="#" class="badge-strip" style="margin-bottom:10px">
@@ -163,7 +163,7 @@ $current_page = 'index';
                 <!-- Fasilitas card -->
                 <div class="unggulan-card card">
                     <img class="placeholder-img unggulan-small-img"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEElR7Y7-kCYFW3ZsfYClcatBUlzOq2tkxNt4PGDeK1fSBSHkY7LuFfh45uOWfDmatcszWZoi0UrpRienFQqFZWljVHKH-RG2bZBL-ADaqUp96e53guwqaIE5rs-hqaPnT7S5yfYehoJ66FV_iYuXzqmNONCZ3uOVkraseURAAxA8aE0clVaf6FBAzPjGUvF-1Nf4dGTTgw_5CXhVDq4YtshRtJpuLiz8ItxfjD1WjMU5uMyfU9jQAi6dK0dI7tiGUDhyptfe-P_iI"
+                    src="img/fasilitas1.jpeg"
                     alt="">
                     <div class="unggulan-card-content">
                         <div class="unggulan-icon-wrap green">
@@ -239,7 +239,7 @@ $current_page = 'index';
             $q_berita = $conn->query("SELECT * FROM berita WHERE status = 'publish' ORDER BY id DESC LIMIT 3");
             while ($b = $q_berita->fetch_assoc()): ?>
             <div class="berita-card card">
-                <img class="berita-img" src="<?= htmlspecialchars($b['gambar'] ? 'uploads/'.$b['gambar'] : 'https://lh3.googleusercontent.com/aida-public/AB6AXuCEElR7Y7-kCYFW3ZsfYClcatBUlzOq2tkxNt4PGDeK1fSBSHkY7LuFfh45uOWfDmatcszWZoi0UrpRienFQqFZWljVHKH-RG2bZBL-ADaqUp96e53guwqaIE5rs-hqaPnT7S5yfYehoJ66FV_iYuXzqmNONCZ3uOVkraseURAAxA8aE0clVaf6FBAzPjGUvF-1Nf4dGTTgw_5CXhVDq4YtshRtJpuLiz8ItxfjD1WjMU5uMyfU9jQAi6dK0dI7tiGUDhyptfe-P_iI') ?>" alt="Foto Berita">
+                <img class="berita-img" src="<?= htmlspecialchars($b['gambar'] ? 'uploads/'.$b['gambar'] : '') ?>" alt="Foto Berita">
                 <div class="berita-card-body">
                     <span class="berita-kategori"><?= htmlspecialchars($b['kategori']) ?></span>
                     <a href="detail-berita.php?id=<?= $b['id'] ?>" class="berita-title-link" style="text-decoration:none">
@@ -277,7 +277,7 @@ $current_page = 'index';
                 <div class="testimoni-quote">"</div>
                 <p class="testimoni-isi"><?= htmlspecialchars($t['isi']) ?></p>
                 <div class="testimoni-author">
-                    <img class="testimoni-avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaxgOvtactjrARqi6h63bzeZEUDDt4-UJrLz600ywV4aUNxrWikzvQV9ywe2SJRlI77z723OWdg32sIgJKlOfh_JQMB-dZc00W5Q0PoUvig-rtP8M5y3w1NWvmO07hQHp5-0Nx1T9AggdAEYFYnHeUcYbaZcH_iAYOAEb9oLuexUyi0RUYdvUkLX8uMi8qW6K4xIht9WYKCppW5RTcuQto-_CLPYWV5MLpP5oG0RuuCV1NfL8PyDClQKfecaslD9WpvX-o3dlIGvQl" alt="Avatar">
+                    <img class="testimoni-avatar" src="https://ui-avatars.com/api/?background=random&color=fff" alt="Avatar">
                     <div>
                         <div class="testimoni-nama"><?= htmlspecialchars($t['nama']) ?></div>
                         <div class="testimoni-peran"><?= htmlspecialchars($t['peran']) ?></div>

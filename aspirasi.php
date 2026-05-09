@@ -69,14 +69,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="aspirasi-avatars">
                     <div class="aspiras-avatar-stack">
                         <?php for ($i = 0; $i < 3; $i++): ?>
-                            <img class="avatar-stack-item" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaxgOvtactjrARqi6h63bzeZEUDDt4-UJrLz600ywV4aUNxrWikzvQV9ywe2SJRlI77z723OWdg32sIgJKlOfh_JQMB-dZc00W5Q0PoUvig-rtP8M5y3w1NWvmO07hQHp5-0Nx1T9AggdAEYFYnHeUcYbaZcH_iAYOAEb9oLuexUyi0RUYdvUkLX8uMi8qW6K4xIht9WYKCppW5RTcuQto-_CLPYWV5MLpP5oG0RuuCV1NfL8PyDClQKfecaslD9WpvX-o3dlIGvQl" alt="Avatar">
+                            <img class="avatar-stack-item" src="https://ui-avatars.com/api/?background=random&color=fff" alt="Avatar">
                         <?php endfor; ?>
                     </div>
                     <span>Bergabung dengan <strong>500+</strong> pemberi aspirasi bulan ini</span>
                 </div>
             </div>
             <div class="aspirasi-hero-right">
-                <img class="aspirasi-hero-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbtvEycatQkDoKZ-8CeqZEtpCSleFgQIAsP2eQ5MSH-lUcQgitwnbE_EfTlTb15eiy7w_V3ih-mbhcuDjHxWCqSZutYowy4Y93XqVG3FSbfcxDRGsOlvJ6nryT5QfHDrhrzceXE-HVnDtFrMmnYUktOiN92NJgCBCPOk0u6DHZeG44Ua3UDqWayuk9X2DeVCtnVGoxNN5ko4WCzvopT7cLfb3cGG2XzPE2UJMuBBhM1HHuaRkhKujN2dGZJ5hU2NNwoX3ntakRv2KM" alt="Siswa Berdiskusi">
+                <img class="aspirasi-hero-img" src="img/WhatsApp Image 2026-05-06 at 09.54.26.jpeg" alt="Siswa Berdiskusi">
                 <div class="aspirasi-quote-float">
                     <p>"Kritik yang membangun adalah kunci kemajuan kita bersama."</p>
                     <span>— Kepala Sekolah</span>
